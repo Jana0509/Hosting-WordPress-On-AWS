@@ -44,10 +44,15 @@ This Project demonstrates deployment of WordPress website in VPC from scratch an
 
 2. Create RDS MYSQL DB in Database Subnet. 
 
+![image](https://github.com/user-attachments/assets/2e012c7e-bd8c-4cc6-afbf-70e09df173ad)
+
+
 3. Creation EC2 Instance Connect Endpoint to SSH with the Web Instances in private subnet
 (EC2 INSTANCE CONNECT : This allows SSH connections to the EC2 instances without the need for bastion hosts or public IP addresses, ensuring secure and controlled access.)
 
 4. Create the EFS and mount it to the EC2 instances.
+
+![image](https://github.com/user-attachments/assets/a57d2b05-9013-49b9-a030-e221aa3ec76b)
 
    4.1 Create the web root directory by SSH with the Web Instances using EC2 Instance Connect Endpoint
  
@@ -66,11 +71,21 @@ Mounting the EFS to the EC2 instances will be done using Launch Template User da
 5.  Create the Launch Template with the user data
    Please refer the EC2 Launch Template file.
 
+![image](https://github.com/user-attachments/assets/eb02f873-eb74-4427-9f66-2feae3cbee6f)
+
+![image](https://github.com/user-attachments/assets/09beae95-3901-4026-adda-3becc2e7e40e)
+
+
 6. Create the Auto Scaling group and use the Launch template which we have created in previous step.
 
 7. Create the Application Load balancer in public subnet and assign the target group
    
 8. Access the WordPress website through the Load Balancer's DNS name.
+
+![image](https://github.com/user-attachments/assets/7c854606-8852-4712-8648-9cad6ded8366)
+
+![image](https://github.com/user-attachments/assets/f52b3a56-3bc9-4a95-9bf4-7a02417a393e)
+
 
 ## Monitoring and Alerts
 
