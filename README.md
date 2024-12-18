@@ -29,7 +29,7 @@ This Project demonstrates deployment of WordPress website in VPC from scratch an
 - NAT GATEWAY : Used as a proxy for the private Instances such as EC2 to contact Internet.
 - ALB : Distributes traffic across EC2 instances in multiple availability zones
 - ASG : Used for Scalability of EC2 Instances.
-- EFS : Provides shared storage for WordPress files across EC2 instances across Multiple Availabilty Zones.
+- EFS : Provides shared storage for WordPress files across EC2 instances in Multiple Availabilty Zones.
 - RDS : Data Storage service in the relational manner across Multiple availability Zones.
 - ACM : To Store TLS/SSL Certificates and Provides SSL/TLS certificates for secure website communication.
 - IAM : Identity and Access Management for the Resources and users
