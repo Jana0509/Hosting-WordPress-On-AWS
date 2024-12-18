@@ -74,8 +74,6 @@ Mounting the EFS to the EC2 instances will be done using Launch Template User da
 
 ![image](https://github.com/user-attachments/assets/eb02f873-eb74-4427-9f66-2feae3cbee6f)
 
-![image](https://github.com/user-attachments/assets/09beae95-3901-4026-adda-3becc2e7e40e)
-
 
 6. Create the Auto Scaling group and use the Launch template which we have created in previous step.
 
