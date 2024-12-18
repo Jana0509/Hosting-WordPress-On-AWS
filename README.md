@@ -37,3 +37,12 @@ This Project demonstrates deployment of WordPress website in VPC from scratch an
 - EC2 Instance Connect Endpoint Service: Used to securely SSH into instances in private subnets without requiring bastion hosts or public IPs.
 
 
+# PROCEDURE FOR CREATING THE RESOURCES AND INSTALLATION:
+
+1. Create the Custom VPC with private and public subnet in two availability zones.
+   PFA Link for Creating the VPC : https://github.com/Jana0509/3-Tier-VPC-AWS
+
+2. Create the Launch Template with the user data
+   Please refer the EC2 Launch Tenmplate file
+
+
