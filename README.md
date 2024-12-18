@@ -2,7 +2,7 @@
 Host a Scalable, Reliable and Secure WordPress Application in 3 Tier Architecture on AWS 
 
 ## Introduction:
-This Project demonstrates deployment of WordPress website in VPC from scratch and hosting a website Scalable, Reliable and Secure on AWS uisng various AWS Services.This Website is deployed on EC2 instances sitting in private subnet fronted with the Application Load Balancer(ALB) routing the traffic across different Availability Zones(AZs) and EFS(Elastic File Service) for shared storage and storing the data in RDS(Relational Database Service) also sitting in private subnet. To connect the Private instances, EC2 Instance Connect Endpoint Service for secure SSH access.
+This Project demonstrates deployment of WordPress website in VPC from scratch and hosting a website Scalable, Reliable and Secure on AWS using various AWS Services.This Website is deployed on EC2 instances sitting in private subnet fronted with the Application Load Balancer(ALB) routing the traffic across different Availability Zones(AZs) and EFS(Elastic File Service) for shared storage and storing the data in RDS(Relational Database Service) also sitting in private subnet. To connect the Private instances, EC2 Instance Connect Endpoint Service for secure SSH access.
 
 ## Architecture Overview: 
 
@@ -75,3 +75,6 @@ Mounting the EFS to the EC2 instances will be done using Launch Template User da
 ## Monitoring and Alerts
 
 SNS: Configured to send notifications related to activities within the Auto Scaling Group, such as scaling events.
+
+## Conclusion:
+This Project leverages multiple AWS Services to create a Secure, Scalable and Resilient Wordpress Application. This Application Architecture is designed to handle unpredictable traffic while maintaining high availability and performance. The use of EC2 Instance Connect Endpoint Service ensures secure SSH access to private instances, eliminating the need for public IPs or bastion hosts.
