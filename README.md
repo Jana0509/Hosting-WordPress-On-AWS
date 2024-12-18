@@ -42,29 +42,31 @@ This Project demonstrates deployment of WordPress website in VPC from scratch an
 1. Create the Custom VPC with private and public subnet in two availability zones.
    PFA Link for Creating the VPC : https://github.com/Jana0509/3-Tier-VPC-AWS
 
-2. Create the Launch Template with the user data
-   Please refer the EC2 Launch Template file
+2. Create RDS MYSQL DB in Database Subnet. 
 
-3. Create the EC2 Auto scaling groups and Launch Instances in private subnets.
-
-4. Creation EC2 Instance Connect Endpoint to SSH with the Web Instances in private subnet
+3. Creation EC2 Instance Connect Endpoint to SSH with the Web Instances in private subnet
 (EC2 INSTANCE CONNECT : This allows SSH connections to the EC2 instances without the need for bastion hosts or public IP addresses, ensuring secure and controlled access.)
 
-5. Create the EFS and mount it to the EC2 instances.
+4. Create the EFS and mount it to the EC2 instances.
 
-   5.1 Create the web root directory by SSH with the Web Instances using EC2 Instance Connect Endpoint
+   4.1 Create the web root directory by SSH with the Web Instances using EC2 Instance Connect Endpoint
  
     sudo mkdir -p /var/www/html
 
-   5.2 Mount EFS to the web root directory:
+   4.2 Mount EFS to the web root directory:
     
     sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport "$EFS_DNS_NAME":/ /var/www/html
    
-   5.3 Restart Apache:
+   4.3 Restart Apache:
 
     sudo service httpd restart
 
-6. Create RDS MYSQL DB in Database Subnet
+Mounting the EFS to the EC2 instances will be done using Launch Template User data.
+
+5.  Create the Launch Template with the user data
+   Please refer the EC2 Launch Template file.
+
+6. Create the Auto Scaling group and use the Launch template which we have created in previous step.
 
 7. Create the Application Load balancer in public subnet and assign the target group
    
