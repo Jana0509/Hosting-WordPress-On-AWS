@@ -71,3 +71,7 @@ Mounting the EFS to the EC2 instances will be done using Launch Template User da
 7. Create the Application Load balancer in public subnet and assign the target group
    
 8. Access the WordPress website through the Load Balancer's DNS name.
+
+## Monitoring and Alerts
+
+SNS: Configured to send notifications related to activities within the Auto Scaling Group, such as scaling events.
