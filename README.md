@@ -6,6 +6,7 @@ This Project demonstrates deployment of WordPress website in VPC from scratch an
 
 ## Architecture Overview: 
 
+![image](https://github.com/user-attachments/assets/c8d40de3-2822-4b04-943b-8676a4bbf080)
 
 
 # The architecture includes:
