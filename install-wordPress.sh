@@ -13,7 +13,7 @@ sudo cp -r wordpress/* /var/www/html/
 # create the wp-config.php file
 sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 
-# edit the wp-config.php file
+# edit the wp-config.php file and give DB name, username, password and DB connection endpoint
 sudo vi /var/www/html/wp-config.php
 
 # restart the webserver
