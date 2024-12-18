@@ -77,4 +77,4 @@ Mounting the EFS to the EC2 instances will be done using Launch Template User da
 SNS: Configured to send notifications related to activities within the Auto Scaling Group, such as scaling events.
 
 ## Conclusion:
-This Project leverages multiple AWS Services to create a Secure, Scalable and Resilient Wordpress Application. This Application Architecture is designed to handle unpredictable traffic while maintaining high availability and performance. The use of EC2 Instance Connect Endpoint Service ensures secure SSH access to private instances, eliminating the need for public IPs or bastion hosts.
+This Project leverages multiple AWS Services to create a Secure, Scalable and fault tolerance Wordpress Application. This Application Architecture is designed to handle unpredictable traffic while maintaining high availability and performance. The use of EC2 Instance Connect Endpoint Service ensures secure SSH access to private instances, eliminating the need for public IPs or bastion hosts.
